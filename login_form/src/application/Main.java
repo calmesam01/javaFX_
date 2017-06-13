@@ -41,7 +41,7 @@ public class Main extends Application {
 		//grid.setGridLinesVisible(true);
 		
 		Button btn = new Button("Login");
-		HBox hbtn = new HBox(10);
+		HBox hbtn = new HBox();
 		hbtn.setAlignment(Pos. BOTTOM_RIGHT );
 		hbtn.getChildren().add(btn);
 		
@@ -55,7 +55,7 @@ public class Main extends Application {
 			actionTarget.setFill(Color.WHITESMOKE);
 		});
 		
-		
+		scene.getStylesheets().add("application/application.css");
 		
 		primaryStage.setTitle("javaFX-loginForm");
 		primaryStage.setScene(scene);
